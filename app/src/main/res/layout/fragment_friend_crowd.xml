@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="我创建的群/组"
+            android:textColor="#b8b8b8"
+            android:textSize="@dimen/Font12" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_crowd"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="我加入的群/组"
+            android:textColor="#b8b8b8"
+            android:textSize="@dimen/Font12" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_crowd_join"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>

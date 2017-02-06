@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">YoungerSeniors</string>
+    <string name="topic_new_item">最新发布</string>
+    <string name="topic_maidou">脉豆悬赏</string>
+    <string name="topic_about_me">与我相关</string>
+    <string name="friend_hint">搜索辈友/群友</string>
+</resources>

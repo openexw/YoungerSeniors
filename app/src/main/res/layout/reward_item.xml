@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/backgroundColor"
+    android:layout_height="match_parent">
+    <!--CircleImageView-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/header"/>
+
+    <TextView
+        android:id="@+id/tv_publish_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_username"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/circleImageView"
+        android:text="2小时前" />
+
+    <LinearLayout
+        android:id="@+id/ll_meg_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/circleImageView"
+        android:layout_marginLeft="60dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_mgs_con"
+            android:textColor="@color/blackTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="喊的嗓子都疼了！" />
+
+        <GridView
+            android:id="@+id/gv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="2dp"
+            android:numColumns="3"
+            android:verticalSpacing="2dp"
+            android:visibility="gone"></GridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_alignTop="@+id/circleImageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout">
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_dou"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="悬赏: "
+            android:textColor="@color/grayTextColor"
+            android:layout_marginRight="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_maidou_num"
+            android:text="7"
+            android:textColor="@color/grayTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="脉豆"
+            android:textColor="@color/grayTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/ll_friend_help"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorTabInnerBorder" />
+
+    <LinearLayout
+        android:id="@+id/ll_friend_help"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="48dp"
+        android:layout_below="@+id/ll_meg_content"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout">
+        <TextView
+            android:id="@+id/tv_friend_help_num"
+            android:text="0"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/cyanTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="位辈友帮助了你"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="伟岸"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_toRightOf="@+id/circleImageView"
+        android:layout_toEndOf="@+id/circleImageView" />
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--toolbar的背景颜色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--状态栏-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--EditText正在输入时，RadioButton的颜色-->
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textColorPrimary">@color/toolbarColorWhite</item>
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">@android:color/white</item>
+
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+    <style name="base_edit_view">
+
+
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+
+        <item name="android:paddingRight">10dp</item>
+
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="search_view" parent="base_edit_view">
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:background">@drawable/selector_search_view</item>
+        <item name="android:textColorHint">@color/toolbarColorWhite</item>
+        <item name="android:textColor">@color/toolbarColorWhite</item>
+    </style>
+
+    <!--搜索辈友-->
+    <style name="friend_search_view" parent="base_edit_view">
+        <item name="android:textSize">13sp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:background">@drawable/selector_friend_search_view</item>
+        <item name="android:textColorHint">#c3c3c3</item>
+        <item name="android:textColor">@color/colorTabText</item>
+    </style>
+
+    <style name="FriendChatUnderline">
+        <item name="android:background">#eeeeee</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="MineItemText">
+        <item name="android:textSize">@dimen/Font15</item>
+        <item name="android:textColor">@color/grayTextColor</item>
+        <item name="android:layout_marginLeft">15dp</item>
+    </style>
+
+    <style name="MyDialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

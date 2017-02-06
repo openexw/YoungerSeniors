@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/head" />
+
+    <LinearLayout
+        android:id="@+id/ll_chat_con"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/circleImageView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_child_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Linda"
+            android:textColor="@color/GroupChildUser"
+            android:textSize="@dimen/Font16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_child_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="今天天气真好"
+            android:textColor="@color/GroupChildUser"
+            android:textSize="@dimen/Font14" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_last_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:text="18:23"
+        android:textColor="@color/ChatTimeText"
+        android:textSize="@dimen/sminFontSize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/circleImageView"
+        style="@style/FriendChatUnderline" />
+</RelativeLayout>

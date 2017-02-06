@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.openoter.youngerseniors.weight.ONToolbar
+        android:id="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:navigationIcon="@drawable/ic_back"
+        android:paddingLeft="15dp"
+        android:title="高级搜索"
+        app:isShowSearchView="false" />
+
+    <!--学校-->
+    <RelativeLayout
+        android:id="@+id/search_item_school"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/search_item_school_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="选择学校"
+            android:textColor="@color/Advance_text_color"
+            android:textSize="@dimen/Font15" />
+
+        <TextView
+            android:id="@+id/tv_school_name_filed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/iv_image_next"
+            android:text="不限"
+            android:textColor="@color/Advance_right_text_color"
+            android:textSize="@dimen/Font14" />
+
+        <ImageView
+            android:id="@+id/iv_image_next"
+            android:layout_width="9dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/advance_right_icon" />
+    </RelativeLayout>
+
+    <View
+        style="@style/FriendChatUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <!--行业-->
+    <RelativeLayout
+        android:id="@+id/search_item_industry"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/search_item_industry_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="选择行业"
+            android:textColor="@color/Advance_text_color"
+            android:textSize="@dimen/Font15" />
+
+        <TextView
+            android:id="@+id/tv_industry_name_filed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/iv_image_industry_next"
+            android:text="不限"
+            android:textColor="@color/Advance_right_text_color"
+            android:textSize="@dimen/Font14" />
+
+        <ImageView
+            android:id="@+id/iv_image_industry_next"
+            android:layout_width="9dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/advance_right_icon" />
+    </RelativeLayout>
+
+    <View
+        style="@style/FriendChatUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <!--关键词-->
+    <RelativeLayout
+        android:id="@+id/search_item_keyword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/search_item_keyword_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="选择行业"
+            android:textColor="@color/Advance_text_color"
+            android:textSize="@dimen/Font15" />
+
+        <TextView
+            android:id="@+id/tv_keyword_name_filed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/iv_image_keyword_next"
+            android:text="不限"
+            android:textColor="@color/Advance_right_text_color"
+            android:textSize="@dimen/Font14" />
+
+        <ImageView
+            android:id="@+id/iv_image_keyword_next"
+            android:layout_width="9dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/advance_right_icon" />
+    </RelativeLayout>
+</LinearLayout>

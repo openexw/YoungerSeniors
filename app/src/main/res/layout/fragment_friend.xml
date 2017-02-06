@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.openoter.youngerseniors.weight.ONToolbar
+        android:id="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:title="我的辈友"
+        app:isShowSearchView="false"
+        app:rightButtonIcon="@drawable/selector_add_friend" />
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="@string/friend_hint"
+        android:focusable="false"
+        style="@style/friend_search_view" />
+
+    <RadioGroup
+        android:id="@+id/rg_friend"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_chat"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp" />
+
+        <RadioButton
+            android:id="@+id/rb_friend_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_mine"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp" />
+
+        <RadioButton
+            android:id="@+id/rb_friend_crowd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_friend_group"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/TabUnderline" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/friend_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

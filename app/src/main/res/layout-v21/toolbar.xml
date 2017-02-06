@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/toolbar_searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:paddingLeft="20dp"
+        android:textSize="@dimen/SmallFontSize"
+        android:drawableRight="@drawable/ic_search"
+        style="@style/search_view"
+        android:visibility="gone"
+        android:focusable="false"
+        android:hint="请输入搜索内容"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/toolbarColorWhite"
+        android:textSize="20sp"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/toolbar_rightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/NomalFontSize"
+        android:textColor="@color/toolbarColorWhite"
+        style="@android:style/Widget.Material.Toolbar.Button.Navigation"
+        />
+    <ImageButton
+        android:id="@+id/toolbar_rightButton_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/NomalFontSize"
+        style="@android:style/Widget.Material.Toolbar.Button.Navigation"
+        android:textColor="@color/toolbarColorWhite" />
+</RelativeLayout>

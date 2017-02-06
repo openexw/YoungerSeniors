@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    android:paddingLeft="5dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_user"
+        android:layout_toRightOf="@+id/circleImageView"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/find_tv_username"
+            android:text="YaY"
+            android:textColor="@color/UserNameColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/find_iv_sex"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/ll_user"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="你们有"
+            android:textColor="@color/UserNameColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/find_tv_experience_num"
+            android:text="2"
+            android:textColor="@color/UserNameColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="条相同经历"
+            android:textColor="@color/UserNameColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/find_tv_year_in"
+        android:text="2014年入学"
+        android:paddingTop="2dp"
+        android:textColor="@color/toolbarColorWhite"
+        android:background="@drawable/year_in_bg"
+        android:paddingBottom="2dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_user"
+        android:layout_toRightOf="@+id/circleImageView"
+        android:layout_toEndOf="@+id/circleImageView" />
+    <TextView
+        android:id="@+id/find_tv_major"
+        android:layout_below="@id/find_tv_year_in"
+        android:layout_toRightOf="@id/circleImageView"
+        android:text="重庆邮电大学 人力资源管理"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/circleImageView"
+        android:background="@color/ItemBottomLine"
+        android:layout_width="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="1dp"
+        android:id="@+id/view" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/header"
+        android:layout_alignBottom="@+id/find_tv_major"
+        android:layout_alignLeft="@+id/view"
+        android:layout_alignStart="@+id/view" />
+
+
+</RelativeLayout>

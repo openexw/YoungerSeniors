@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="48dp">
+    <TextView
+        android:text="分子"
+        android:textColor="@color/BlackColor"
+        android:textSize="@dimen/NomalFontSize"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/tv_group"
+        android:layout_width="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:id="@+id/ll_group_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:text="2"
+            android:id="@+id/tv_online_num"
+            android:textSize="@dimen/minFontSize"
+            android:textColor="@color/GroupColorOfRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="/"
+            android:textSize="@dimen/minFontSize"
+            android:layout_width="wrap_content"
+            android:textColor="@color/GroupColorOfRight"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_group_friend_total"
+            android:textSize="@dimen/minFontSize"
+            android:text="20"
+            android:textColor="@color/GroupColorOfRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
